@@ -27,6 +27,7 @@ jobs:
     name: Creating new packet project
     steps:
       - uses: mattdavis0351/packet-create-project@v1
+        id: project
         with:
           API_key: ${{ secrets.PACKET_API_KEY }}
           org_name: My Packet org # if not supplied will use default org for API key
