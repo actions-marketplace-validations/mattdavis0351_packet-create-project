@@ -1,0 +1,32 @@
+# action.yml
+name: "Create Packet Project"
+description: "Create a new project on Packet.com"
+author: mattdavis0351
+
+inputs:
+  API_key: # API key set under "Personal Settings on Packet.com"
+    description: "Packet.com API authorization token"
+    required: true
+    default: "No key supplied"
+  org_name:
+    description: "Organization to place new project in, uses default user org if not specified"
+    required: false
+    default: "default"
+  project_name:
+    description: "Desired name for new project"
+    required: true
+    default: "GitHub Actions"
+
+outputs:
+  project_id: # This is the id of the newly created project, useful for further action chaining
+    description: "Newly created projects ID"
+  project_name: # This is the name of the newly created project, useful for futher action chaining
+    description: "Name of the newly created project"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+
+branding:
+  icon: "cloud"
+  color: "gray-dark"
