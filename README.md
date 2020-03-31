@@ -26,7 +26,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Creating new packet project
     steps:
-      - uses: mattdavis0351/create-packet-project@v1
+      - uses: mattdavis0351/packet-create-project@v1
         with:
           API_key: ${{ secrets.PACKET_API_KEY }}
           org_name: My Packet org # if not supplied will use default org for API key
