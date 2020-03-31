@@ -6,7 +6,7 @@ This GitHub Action will create a new project on [packet.com](https://packet.com)
 
 # Creating projects
 
-With this action you can automate yoru workflow to provision projects using the [packet.com api](https://api.packet.net).
+With this action you can automate your workflow by provisioning projects using the [packet.com api](https://api.packet.net).
 
 To use this action you will first need an [authentication token](https://www.packet.com/developers/api/authentication/) which can be generated through the [Packet Portal](https://app.packet.net/login?redirect=%2F%3F__woopraid%3DjUPDKi0tqtym).
 
