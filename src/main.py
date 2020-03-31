@@ -2,9 +2,10 @@ import packet
 import os
 
 # Collect input variables from workflow
-API_key = os.environ("INPUT_API_KEY")
-org_name = os.environ("INPUT_ORG_NAME")
-project_name = os.environ("INPUT_PROJECT_NAME")
+API_key = os.getenv("INPUT_API_KEY")
+org_name = os.getenv("INPUT_ORG_NAME")
+project_name = os.getenv("INPUT_PROJECT_NAME")
+
 
 # Check if required inputs have been received
 if API_key == "No key supplied":
